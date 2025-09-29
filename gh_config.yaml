@@ -1,0 +1,32 @@
+# GitHub监听Bot配置文件示例
+
+# GitHub Webhook 配置
+github:
+  webhook_secret: "114514"  # 设置一个强密码作为webhook密钥
+  port: 5000  # webhook监听端口，确保防火墙开放此端口
+  
+# 消息通知配置
+notifications:
+  # 要通知的群号列表（可以是多个群）
+  groups: []
+    # - 123456789
+    # - 987654321
+  
+  # 要通知的用户QQ号列表
+  users: 
+    - 0  # 替换为你的QQ号
+  
+  # 事件过滤器 - 设置为true的事件会发送通知
+  events:
+    push: true           # 代码推送通知
+    pull_request: true   # PR相关事件
+    issues: true         # Issue相关事件
+    release: true        # 版本发布通知
+    star: true          # 获得星标通知
+    fork: true          # 被Fork通知
+    
+  # 仓库白名单 - 如果不为空，只有列表中的仓库会发送通知
+  # 格式：["用户名/仓库名", "组织名/仓库名"]
+  repo_whitelist: []
+    # - "KirisameVanilla/ghbot-ncatbot"
+    # - "your_username/your_repo"

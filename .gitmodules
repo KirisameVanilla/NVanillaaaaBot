@@ -1,0 +1,6 @@
+[submodule "plugins/forwardbot"]
+	path = plugins/forwardbot
+	url = https://github.com/KirisameVanilla/forwardbot-ncatbot.git
+[submodule "plugins/ghbot"]
+	path = plugins/ghbot
+	url = https://github.com/KirisameVanilla/ghbot-ncatbot.git
