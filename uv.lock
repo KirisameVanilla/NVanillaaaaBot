@@ -222,7 +222,7 @@ wheels = [
 
 [[package]]
 name = "ncatbot"
-version = "4.2.2.post4"
+version = "4.2.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
@@ -242,9 +242,9 @@ dependencies = [
     { name = "urllib3" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f5/f1/75964ab50dbcbdbb281b81c03d99760c3dcd8a50599a339f51ce91d4aaf1/ncatbot-4.2.2.post4.tar.gz", hash = "sha256:569de855825bc3f54ec7c053dcb30dd50626b0650d0872ead30510d9f49ba9d0", size = 163008, upload-time = "2025-10-03T13:17:44.333Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/5b/09708fc68453218ac53ff71d62e7a68e6b875977b39dbe80367454145add/ncatbot-4.2.3.tar.gz", hash = "sha256:f10df217fb09810ad0133a1c1601841a802196a2dc9ed68b168b6edc53e9bc9b", size = 163304, upload-time = "2025-10-06T01:55:17.753Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b2/8b/4a5fdd4fa4f7a8dd44fb462729ebd178768f77b167c0a8c725a21375d1ae/ncatbot-4.2.2.post4-py3-none-any.whl", hash = "sha256:701e11f8505513e3f20d2bca430c7df1b480ac8766200ddb00db7a497263ea88", size = 213573, upload-time = "2025-10-03T13:17:42.741Z" },
+    { url = "https://files.pythonhosted.org/packages/b5/8c/ed400adf9b968dc6a22e1edaf1df420f168629d5c84268c7c93601339999/ncatbot-4.2.3-py3-none-any.whl", hash = "sha256:361177d828c36f0a2d86a93fdb43b2a6ffcf5d42b12cf9c8401f32f04fc95c7c", size = 213831, upload-time = "2025-10-06T01:55:16.295Z" },
 ]
 
 [[package]]
