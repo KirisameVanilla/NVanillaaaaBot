@@ -1,8 +1,8 @@
 name = "ForwardBotPlugin"
-version = "0.2.0"
+version = "0.3.0"
 main = "plugin.py"
 entry_class = "ForwardBotPlugin"
 author = "KirisameVanilla"
-description = "QQ群消息转发与规则管理，适配 NcatBot 5"
+description = "QQ群消息转发及两分钟内跨群撤回，适配 NcatBot 5"
 
 pip_dependencies = []
