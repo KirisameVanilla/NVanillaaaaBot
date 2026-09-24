@@ -1,0 +1,19 @@
+# 转发机器人专用配置文件
+# Forward Bot Configuration
+
+# 消息转发配置
+send_interval_ms: 500 # 转发间隔(毫秒)，防止频率过快
+
+# 转发规则列表
+rules:
+  # 示例规则，实际使用时需要修改
+  - name: "示例规则" # 规则名称
+    type: "prefix" # 过滤类型: "prefix"(前缀) 或 "keyword"(关键词)
+    source_groups: # 监听的源群号列表
+      - 123456789
+    target_groups: # 转发到的目标群号列表
+      - 987654321
+    keywords: # 前缀列表或关键词列表
+      - "重要"
+      - "紧急"
+    forward_prefix: "[转发]" # 转发前缀模板，支持变量 {source_group}
