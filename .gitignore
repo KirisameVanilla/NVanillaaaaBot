@@ -11,3 +11,5 @@ wheels/
 data/
 logs/
 napcat/
+*.v4.bak
+.ruff_cache/

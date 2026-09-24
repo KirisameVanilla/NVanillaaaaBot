@@ -1,4 +1,4 @@
-from ncatbot.core import BotClient
+from ncatbot.app import BotClient
 
-bot = BotClient()
-bot.run_frontend()
+if __name__ == "__main__":
+    BotClient().run()

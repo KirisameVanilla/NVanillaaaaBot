@@ -13,13 +13,11 @@
 **示例：**
 
 ```python
-from ncatbot.plugin_system import (
-    NcatBotPlugin,          # 类
-    command_registry,       # 变量
-    group_filter,           # 函数
-    option,                 # 函数
-    param,                  # 函数
-    root_filter,            # 函数
+from ncatbot.utils import (
+    ConfigManager,         # 类
+    ncatbot_config,         # 变量
+    get_config_manager,    # 函数
+    get_log,               # 函数
 )
 ```
 
@@ -30,16 +28,10 @@ from ncatbot.plugin_system import (
 **示例：**
 
 ```python
-from ncatbot.core.event import GroupMessageEvent
-from ncatbot.plugin_system import (
-    NcatBotPlugin,
-    command_registry,
-    group_filter,
-    option,
-    param,
-    root_filter,
-)
-from ncatbot.utils import config, get_log
+from ncatbot.core import registrar
+from ncatbot.event.qq import GroupMessageEvent
+from ncatbot.plugin import NcatBotPlugin
+from ncatbot.utils import get_config_manager, get_log
 ```
 
 ### 3. 导入分组结构
@@ -54,12 +46,13 @@ from ncatbot.utils import config, get_log
 
 ```python
 # ncatbot 框架模块
-from ncatbot.core.event import GroupMessageEvent
-from ncatbot.plugin_system import NcatBotPlugin, command_registry, group_filter
-from ncatbot.utils import config, get_log
+from ncatbot.core import registrar
+from ncatbot.event.qq import GroupMessageEvent
+from ncatbot.plugin import NcatBotPlugin
+from ncatbot.utils import get_config_manager, get_log
 
 # 项目自定义模块
-from .webhook import GitHubWebhookHandler
+from .rules import ForwardRuleManager
 
 # 第三方依赖
 import threading
@@ -86,8 +79,8 @@ from typing import Any, Dict, Optional
 **示例：**
 
 ```python
-from ncatbot.core import GroupMessage
-from ncatbot.core.event import GroupMessageEvent
+from ncatbot.event import BaseEvent
+from ncatbot.event.qq import GroupMessageEvent
 ```
 
 ---
